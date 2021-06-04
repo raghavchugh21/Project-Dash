@@ -1,5 +1,10 @@
 from django.shortcuts import render
+from store.models import Product
 
 
 def HomePage(request):
-    return render(request, 'Home.html')
+    products = Product.objects.all().filter(is_available=True)
+    context = {
+        'products': products,
+    }
+    return render(request, 'Home.html', context)
