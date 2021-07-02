@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
 
@@ -85,7 +86,7 @@
 
 	<article class="box mb-3">
 		<div class="icontext w-100">
-			<img src="./images/avatars/avatar1.jpg" class="img-xs icon rounded-circle">
+			<img src="{% static 'images/avatars/avatar1.jpg' %}" class="img-xs icon rounded-circle">
 			<div class="text">
 				<span class="date text-muted float-md-right">24.04.2020 </span>
 				<h6 class="mb-1">Mike John </h6>
