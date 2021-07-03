@@ -5,10 +5,10 @@ from .models import Account
 class RegistrationForm(forms.ModelForm):
     password = forms.CharField(widget=forms.PasswordInput(attrs={'placeholder': 'Password'}))
     confirm_password = forms.CharField(widget=forms.PasswordInput(attrs={'placeholder': 'Confirm Password'}))
-    first_name = forms.CharField(widget=forms.PasswordInput(attrs={'placeholder': 'First Name'}))
-    last_name = forms.CharField(widget=forms.PasswordInput(attrs={'placeholder': 'Last Name'}))
-    phone_number = forms.CharField(widget=forms.PasswordInput(attrs={'placeholder': 'Phone Number'}))
-    email = forms.CharField(widget=forms.PasswordInput(attrs={'placeholder': 'E-mail'}))
+    first_name = forms.CharField(widget=forms.PasswordInput(attrs={'type':'text', 'placeholder': 'First Name'}))
+    last_name = forms.CharField(widget=forms.PasswordInput(attrs={'type':'text', 'placeholder': 'Last Name'}))
+    phone_number = forms.CharField(widget=forms.PasswordInput(attrs={'type':'text', 'placeholder': 'Phone Number'}))
+    email = forms.CharField(widget=forms.PasswordInput(attrs={'type':'text', 'placeholder': 'E-mail'}))
 
     class Meta:
         model = Account
