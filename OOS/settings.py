@@ -26,7 +26,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=True, cast=bool)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['http://18.117.73.160']
 
 
 # Application definition
@@ -153,7 +153,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-SITE_URL = "http://0.0.0.0/"
+SITE_URL = "http://127.0.0.1:8000/"
 
 MESSAGE_TAGS = {
     messages.ERROR: 'danger',
