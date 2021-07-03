@@ -1,0 +1,12 @@
+{
+  "apps": [
+    {
+      "name": "OOS",
+      "cwd": "/srv/OOS",
+      "args": "runserver",
+      "script": "manage.py",
+      "exec_mode": "fork",
+      "exec_interpreter": "python"
+    }
+  ]
+}
