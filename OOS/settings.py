@@ -153,7 +153,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-SITE_URL = "http://localhost:8000/"
+SITE_URL = "http://0.0.0.0/"
 
 MESSAGE_TAGS = {
     messages.ERROR: 'danger',
