@@ -1,7 +1,7 @@
 {
    "apps":
       [{
-        "name" : "OOS",
+        "name" : "Out-of-Syllabus",
         "script" : "manage.py",
         "args" : ["runserver", "0.0.0.0:8000"],
         "exec_mode" : "fork",
