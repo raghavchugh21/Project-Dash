@@ -1,0 +1,25 @@
+branch-defaults:
+  master:
+    environment: oos-env
+    group_suffix: null
+environment-defaults:
+  django-env:
+    branch: null
+    repository: null
+  oos-env:
+    branch: null
+    repository: null
+global:
+  application_name: oos-project
+  branch: null
+  default_ec2_keyname: aws-eb
+  default_platform: Python 3.6
+  default_region: us-west-2
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: eb-cli
+  repository: null
+  sc: git
+  workspace_type: Application
