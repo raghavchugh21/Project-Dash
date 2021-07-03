@@ -1,8 +1,8 @@
 {
   "apps": [
     {
-      "name": "OOS",
-      "cwd": "/srv/OOS",
+      "name": "Out-of-Syllabus",
+      "cwd": "/srv/Out-of-Syllabus",
       "args": "runserver",
       "script": "manage.py",
       "exec_mode": "fork",
