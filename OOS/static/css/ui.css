@@ -141,12 +141,7 @@ a:hover {
 
 .hover-bg:hover {
   background: #3167eb;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom right, #3167eb, #3167eb);
-  /* Standard syntax */
   transition: 0.5s;
 }
 
@@ -265,56 +260,31 @@ article:after,
 
 .bg-gradient-blue {
   background: rgba(33, 37, 41, 0.4);
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom right, rgba(49, 103, 235, 0.9), rgba(33, 37, 41, 0.4));
-  /* Standard syntax */
   transition: 0.5s;
 }
 
 .bg-gradient-green {
   background: rgba(33, 37, 41, 0.4);
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom right, rgba(0, 181, 23, 0.9), rgba(33, 37, 41, 0.4));
-  /* Standard syntax */
   transition: 0.5s;
 }
 
 .bg-gradient-orange {
   background: rgba(33, 37, 41, 0.4);
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom right, rgba(255, 144, 23, 0.9), rgba(33, 37, 41, 0.4));
-  /* Standard syntax */
   transition: 0.5s;
 }
 
 .bg-gradient-red {
   background: rgba(33, 37, 41, 0.4);
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom right, rgba(250, 52, 52, 0.9), rgba(33, 37, 41, 0.4));
-  /* Standard syntax */
   transition: 0.5s;
 }
 
 .bg-gradient-pink {
   background: rgba(33, 37, 41, 0.4);
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom right, rgba(232, 62, 140, 0.9), rgba(33, 37, 41, 0.4));
-  /* Standard syntax */
   transition: 0.5s;
 }
 
@@ -347,12 +317,7 @@ article:after,
   opacity: 0.6;
   transition: 0.5s;
   background: aqua;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom right, #3167eb, aqua);
-  /* Standard syntax */
 }
 .overlay-gradient:hover:before {
   opacity: 0.9;
