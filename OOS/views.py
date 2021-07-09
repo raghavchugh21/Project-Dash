@@ -7,4 +7,4 @@ def HomePage(request):
     context = {
         'products': products,
     }
-    return render(request, 'home.html', context)
+    return render(request, 'Home.html', context)
