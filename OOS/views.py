@@ -3,7 +3,10 @@ from store.models import Product
 
 
 def HomePage(request):
-    products = Product.objects.all().filter(is_available=True)
+    if Product.objects.all().filter(is_available=True).exists():
+        products = Product.objects.all().filter(is_available=True)
+    else:
+        products = None
     context = {
         'products': products,
     }

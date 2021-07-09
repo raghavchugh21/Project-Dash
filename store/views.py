@@ -8,12 +8,10 @@ from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 
 
 def store(request, category_slug=None):
-    categories = None
-    products = None
     if category_slug is not None:
         categories = get_object_or_404(Category, slug=category_slug)
         products = Product.objects.filter(category=categories, is_available=True)
-        paginator = Paginator(products, 1)
+        paginator = Paginator(products, 6)
         page = request.GET.get('page')
         paged_products = paginator.get_page(page)
     else:
@@ -51,8 +49,12 @@ def search(request):
         keyword = request.GET.get('keyword')
         if keyword:
             products = Product.objects.filter(Q(description__icontains=keyword) | Q(product_name__icontains=keyword)).order_by('-created_date')
+            product_count = products.count()
+        else:
+            products = None
+            product_count = 0
     context = {
         'products': products,
-        'products_count': products.count()
+        'products_count': product_count
     }
     return render(request, 'store/store.html', context)
