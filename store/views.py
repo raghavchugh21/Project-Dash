@@ -39,6 +39,7 @@ def product_detail(request, category_slug, product_slug):
     context = {
         'single_product': single_product,
         'in_cart': in_cart,
+        'desc_list': [s for s in single_product.description.split(',')]
     }
 
     return render(request, 'store/product_detail.html', context)
