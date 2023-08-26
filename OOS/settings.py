@@ -26,7 +26,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=True, cast=bool)
 
-ALLOWED_HOSTS = ['127.0.0.1', 'the-project-dash.herokuapp.com']
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
@@ -84,9 +84,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': 'zx4QrW3IMPwYrneIqffI',
-        'HOST': 'containers-us-west-126.railway.app',
-        'PORT': '5697',
+        'PASSWORD': 'fmncN8WixwzHQrR8sHs9',
+        'HOST': 'containers-us-west-173.railway.app',
+        'PORT': '7524',
     }
 }
 # DATABASES = {
