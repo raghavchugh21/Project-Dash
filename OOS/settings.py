@@ -60,7 +60,7 @@ ROOT_URLCONF = 'OOS.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'template')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -151,7 +151,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-SITE_URL = "https://dash-nine-nu.vercel.app/"
+SITE_URL = "https://dash-nine-nu.vercel.app"
 
 MESSAGE_TAGS = {
     messages.ERROR: 'danger',
