@@ -152,7 +152,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# SITE_URL = "http://127.0.0.1:8000/"
+SITE_URL = "https://dash-nine-nu.vercel.app/"
 
 MESSAGE_TAGS = {
     messages.ERROR: 'danger',
